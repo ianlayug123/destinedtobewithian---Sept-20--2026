@@ -1,0 +1,74 @@
+/* ==========================================
+   GLOBAL ANIMATIONS
+========================================== */
+
+.fadeUp{
+
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s;
+
+}
+
+.fadeUp.show{
+
+    opacity:1;
+    transform:translateY(0);
+
+}
+
+/* ==========================
+   GOLD PARTICLES
+========================== */
+
+.particle{
+
+    position:fixed;
+
+    top:-20px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:999;
+
+    background:radial-gradient(circle,#FFD86A,#C9A227);
+
+    box-shadow:
+        0 0 10px #FFD86A,
+        0 0 20px rgba(255,216,106,.6);
+
+    animation:goldFall linear forwards;
+
+}
+
+@keyframes goldFall{
+
+    0%{
+
+        transform:
+        translateY(0)
+        translateX(0)
+        rotate(0deg);
+
+    }
+
+    50%{
+
+        transform:
+        translateY(50vh)
+        translateX(30px);
+
+    }
+
+    100%{
+
+        transform:
+        translateY(110vh)
+        translateX(-30px)
+        rotate(360deg);
+
+    }
+
+}

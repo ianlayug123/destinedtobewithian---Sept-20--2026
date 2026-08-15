@@ -1,0 +1,205 @@
+/* =========================================
+   NAVIGATION - DESKTOP
+========================================= */
+
+#navbar {
+    width: 100%;
+    position: relative;
+    z-index: 10000;
+}
+
+.navContainer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: #d9aa24;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 35px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.navLinks li a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 400;
+
+    white-space: nowrap;
+
+    transition: color 0.3s ease;
+}
+
+.navLinks li a:hover {
+    color: #d9aa24;
+}
+
+
+/* =========================================
+   HIDE MOBILE BUTTON ON DESKTOP
+========================================= */
+
+.menuButton {
+    display: none !important;
+}
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 768px) {
+
+    .navContainer {
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    /* Hide desktop navigation */
+
+    .navLinks {
+        display: none;
+    }
+
+    /* Show hamburger */
+
+    .menuButton {
+        display: flex !important;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 48px;
+        height: 48px;
+
+        padding: 0;
+        margin: 0;
+
+        background: transparent;
+        border: none;
+
+        color: #d9aa24;
+
+        font-size: 32px;
+        line-height: 1;
+
+        cursor: pointer;
+
+        position: relative;
+        z-index: 10002;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Open mobile menu */
+
+    .navLinks.active {
+        display: flex;
+
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0;
+
+        background: #241710;
+
+        padding: 15px 0 20px;
+        margin: 0;
+
+        box-sizing: border-box;
+
+        z-index: 10001;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .navLinks.active li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navLinks.active li a {
+        display: block;
+
+        width: 100%;
+
+        padding: 14px 20px;
+
+        box-sizing: border-box;
+
+        color: #ffffff;
+
+        font-size: 16px;
+    }
+
+    .navLinks.active li a:hover {
+        color: #d9aa24;
+        background: rgba(217, 170, 36, 0.08);
+    }
+
+}
+
+/* =========================================
+   TRANSPARENT STICKY NAVIGATION
+========================================= */
+
+#navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+
+    /* Transparent dark chocolate brown */
+    background: rgba(36, 23, 16, 0.65);
+
+    /* Optional glass effect */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid rgba(217, 170, 36, 0.15);
+}
+
+/* Keep navigation above gold particles */
+
+.navContainer {
+    position: relative;
+    z-index: 10001;
+}

@@ -1,0 +1,262 @@
+/*=====================================
+        HERO
+=====================================*/
+
+#hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+}
+
+.slide{
+
+    position:absolute;
+
+    inset:0;
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    opacity:0;
+
+    transition:opacity 2s ease;
+
+}
+
+.slide.active{
+
+    opacity:1;
+
+}
+
+.heroOverlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    z-index:1;
+
+}
+
+.heroContent{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:120px 20px 60px;
+
+    box-sizing:border-box;
+
+}
+
+.newspaper{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.edition{
+
+    font-size:16px;
+
+    letter-spacing:4px;
+
+}
+
+.hashtag{
+
+    color:#C9A227;
+
+    margin:25px 0;
+
+    font-weight:600;
+
+}
+
+.newspaperTitle{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:62px;
+
+    font-weight:700;
+
+    margin:25px 0;
+
+}
+
+.divider{
+
+    width:160px;
+
+    height:2px;
+
+    background:#C9A227;
+
+    margin:25px auto;
+
+}
+
+.heroContent h1{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:74px;
+
+    line-height:1.1;
+
+    margin:35px 0;
+
+}
+
+.heroContent h1 span{
+
+    color:#C9A227;
+
+}
+
+.headline{
+
+    margin-top:35px;
+
+    line-height:1.5;
+
+    letter-spacing:6px;
+
+    font-size:28px;
+
+    font-weight:500;
+
+}
+
+#frontPageButton{
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    background:linear-gradient(135deg,#D4AF37,#B8860B);
+
+    color:white;
+
+    border:none;
+
+    padding:18px 46px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    box-shadow:0 10px 30px rgba(201,162,39,.35);
+
+    transition:.35s;
+
+}
+
+#frontPageButton:hover{
+
+    transform:translateY(-4px);
+
+    background:#b8921f;
+
+}
+
+@media(max-width:768px){
+
+    .newspaperTitle{
+
+        font-size:42px;
+
+    }
+
+    .heroContent h1{
+
+        font-size:48px;
+
+    }
+
+    .headline{
+
+        font-size:20px;
+
+        letter-spacing:3px;
+
+    }
+
+}
+
+/* =========================================
+   DARK CHOCOLATE WEDDING BACKGROUND
+========================================= */
+
+/* Main website background */
+body {
+    background-color: #1c120d !important;
+}
+
+/* Main sections */
+section {
+    background-color: #1c120d;
+}
+
+/* Common dark sections */
+.hero,
+.story-section,
+.countdown-section,
+.details-section,
+.timeline-section,
+.gallery-section,
+.gift-guide-section,
+.faq-bonus-section,
+.final-countdown {
+    background-color: #1c120d;
+}
+
+/* Cards and content boxes */
+.gift-card,
+.gift-guidelines,
+.faq-item,
+.countdown-box {
+    background-color: #241711;
+}
+
+/* Navigation */
+#navbar {
+    background-color: #241711;
+}
+
+/* Footer */
+footer {
+    background-color: #160d09;
+}

@@ -1,0 +1,3148 @@
+/*==============================
+      STORY
+==============================*/
+
+#story{
+
+    background:#F8F5EF;
+
+    padding:100px 20px;
+
+}
+
+.storyContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.storyHeader{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.storyHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.storyHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:#222;
+
+    margin:10px 0;
+
+}
+
+.storyHeader p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+.storyCard{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:50px;
+
+    margin-bottom:80px;
+
+}
+
+.storyCard img{
+
+    width:50%;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.15);
+
+}
+
+.storyText{
+
+    width:50%;
+
+}
+
+.storyText small{
+
+    color:#C9A227;
+
+    letter-spacing:3px;
+
+}
+
+.storyText h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+
+    margin:15px 0;
+
+    color:#222;
+
+}
+
+.storyText p{
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+@media(max-width:900px){
+
+.storyCard,
+.reverse{
+
+    flex-direction:column;
+
+}
+
+.storyCard img,
+.storyText{
+
+    width:100%;
+
+}
+
+.storyHeader h2{
+
+    font-size:42px;
+
+}
+
+.storyText h3{
+
+    font-size:32px;
+
+}
+
+}
+
+/*=========================================
+    SCROLL ANIMATION
+=========================================*/
+
+.storyCard{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:all .8s ease;
+
+}
+
+.storyCard.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/*=====================================
+        WEDDING DETAILS
+=====================================*/
+
+#details{
+
+    background:#111;
+
+    color:white;
+
+    padding:120px 20px;
+
+}
+
+.detailsContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.detailsHeader{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.detailsHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.detailsHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    margin:15px 0;
+
+}
+
+.detailsHeader p{
+
+    color:#ccc;
+
+}
+
+.detailsGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+}
+
+.detailCard{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:45px;
+
+    transition:.4s;
+
+}
+
+.detailCard:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#C9A227;
+
+}
+
+.detailCard h3{
+
+    color:#C9A227;
+
+    margin-bottom:20px;
+
+}
+
+.detailCard h4{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.detailCard p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+.mapButton{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 28px;
+
+    background:#C9A227;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.mapButton:hover{
+
+    background:#b8921f;
+
+}
+
+@media(max-width:900px){
+
+.detailsGrid{
+
+grid-template-columns:1fr;
+
+}
+
+.detailsHeader h2{
+
+font-size:42px;
+
+}
+
+}
+
+/*=====================================
+        TIMELINE
+=====================================*/
+
+#timeline{
+
+    padding:120px 20px;
+
+    background:#F8F5EF;
+
+}
+
+.timelineContainer{
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+.timelineHeader{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.timelineHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.timelineHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    margin:15px 0;
+
+    color:#2F3E2C;
+
+}
+
+.timelineHeader p{
+
+    color:#555;
+
+}
+
+.timeline{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    flex-wrap:nowrap;
+
+    width:100%;
+
+}
+
+.timelineItem{
+
+    width:110px;
+
+    text-align:center;
+
+    flex-shrink:0;
+
+}
+
+.circle{
+
+    width:80px;
+
+    height:80px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    border:2px solid #C9A227;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.timelineItem h3{
+
+    margin-top:20px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:28px;
+
+    color:#2F3E2C;
+
+}
+
+.timelineItem p{
+
+    color:#666;
+
+}
+
+.line{
+
+    flex:0.6;
+
+    height:3px;
+
+    background:#C9A227;
+
+    margin-top:40px;
+
+}
+
+@media(max-width:900px){
+
+    .timeline{
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+
+    }
+
+    .line{
+
+        width:3px;
+
+        height:60px;
+
+        margin:0;
+
+    }
+
+    .timelineItem{
+
+        width:100%;
+
+    }
+
+}
+
+/*=====================================
+        ENTOURAGE
+=====================================*/
+
+#entourage{
+
+    padding:120px 20px;
+
+    background:#111;
+
+}
+
+.entourageContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.entourageHeader{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.entourageHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.entourageHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    margin:15px 0;
+
+    color:white;
+
+}
+
+.entourageHeader p{
+
+    color:#ccc;
+
+}
+
+.entourageGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.memberCard{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.memberCard:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#C9A227;
+
+}
+
+.memberCard h3{
+
+    color:#C9A227;
+
+    margin-bottom:20px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:30px;
+
+}
+
+.memberCard p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+/*=====================================
+        WEDDING PARTY
+=====================================*/
+
+#entourage{
+
+    background:#111;
+
+    padding:120px 20px;
+
+}
+
+.entourageContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.entourageHeader{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.entourageHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.entourageHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:white;
+
+    margin:15px 0;
+
+}
+
+.entourageHeader p{
+
+    color:#bbb;
+
+}
+
+.entourageRow{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-bottom:35px;
+
+}
+
+.memberCard{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+}
+
+.memberCard:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#C9A227;
+
+}
+
+.memberCard h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#C9A227;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.memberCard p{
+
+    color:#ddd;
+
+    line-height:1.9;
+
+}
+
+.entourageSection{
+
+    margin:90px 0;
+
+}
+
+.entourageSection h2{
+
+    text-align:center;
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#C9A227;
+
+    font-size:48px;
+
+    margin-bottom:45px;
+
+}
+
+.principalGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+    gap:35px;
+
+}
+
+.principalCard{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+}
+
+.principalCard h3{
+
+    color:#C9A227;
+
+    margin-bottom:25px;
+
+}
+
+.principalCard ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.principalCard li{
+
+    padding:8px 0;
+
+    color:#ddd;
+
+}
+
+.dressBadge{
+
+    margin-top:25px;
+
+    padding:12px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    font-weight:600;
+
+    color:white;
+
+}
+
+.gold{
+
+    background:#D4AF37;
+
+}
+
+.black{
+
+    background:#1C1C1C;
+
+}
+
+.olive{
+
+    background:#6B7B32;
+
+}
+
+.chocolate{
+
+    background:#5C4033;
+
+    color:white;
+
+}
+
+.khaki{
+
+    background:#8B7355;
+
+    color:white;
+
+}
+
+.flower{
+
+    background:#F6D76E;
+
+    color:#333;
+
+}
+
+/*=====================================
+      GUEST DRESS CODE
+=====================================*/
+
+#guestDress{
+
+    background:#F8F5EF;
+
+    padding:120px 20px;
+
+}
+
+.guestDressContainer{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.guestDressHeader{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.guestDressHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.guestDressHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:#2F3E2C;
+
+    margin:15px 0;
+
+}
+
+.guestDressHeader p{
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.guestColors{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:30px;
+
+    margin-bottom:80px;
+
+}
+
+.guestColor{
+
+    text-align:center;
+
+}
+
+.colorCircle{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    border:4px solid white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.guestGold{background:#D4AF37;}
+.guestOlive{background:#6B7B32;}
+.guestKhaki{background:#8B7355;}
+.guestPeach{background:#F4C7B8;}
+.guestBeige{background:#DCC8A0;}
+
+.whiteColor{
+
+    background:#FFFFFF;
+
+    border:1px solid #ccc;
+
+}
+
+.ivoryColor{
+
+    background:#FFFFF0;
+
+    border:1px solid #ccc;
+
+}
+
+.avoidColors{
+
+    text-align:center;
+
+}
+
+.avoidGrid{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    margin:30px 0;
+
+}
+
+.avoidItem{
+
+    text-align:center;
+
+}
+
+.avoidColors small{
+
+    color:#666;
+
+}
+
+/*=====================================
+      WEDDING REMINDERS
+=====================================*/
+
+#reminders{
+
+    background:#F8F5EF;
+
+    padding:120px 20px;
+
+}
+
+.remindersContainer{
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+.remindersHeader{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.remindersHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.remindersHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:#2F3E2C;
+
+    margin:15px 0;
+
+}
+
+.remindersHeader p{
+
+    color:#666;
+
+}
+
+.remindersGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.reminderCard{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.reminderCard:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.icon{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.reminderCard h3{
+
+    color:#C9A227;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.reminderCard p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+#guestDress{
+
+    background:#111;
+
+    padding:120px 20px;
+
+}
+
+.guestDressHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:#fff;
+
+    margin:15px 0;
+
+}
+
+.guestDressHeader p{
+
+    color:#d6d6d6;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.guestColor h3{
+
+    color:#fff;
+
+    margin-top:20px;
+
+}
+
+.guestColor p{
+
+    color:#C9A227;
+
+    font-weight:500;
+
+}
+
+.avoidColors h3{
+
+    color:#C9A227;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.avoidItem p{
+
+    color:#fff;
+
+}
+
+.avoidColors small{
+
+    color:#ccc;
+
+    font-size:16px;
+
+}
+
+/*=====================================
+        RSVP
+=====================================*/
+
+#rsvp{
+
+    background:#111;
+
+    padding:120px 20px;
+
+    text-align:center;
+
+}
+
+.rsvpContainer{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.rsvpContainer h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.rsvpContainer h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:white;
+
+    margin:20px 0;
+
+}
+
+.rsvpContainer p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    margin-bottom:50px;
+
+}
+
+.rsvpButtons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+.rsvpBtn{
+
+    padding:18px 40px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.yes{
+
+    background:#667A42;
+
+}
+
+.no{
+
+    background:#7A2E2E;
+
+}
+
+.rsvpBtn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.reminderCard h2{
+
+    color:#2F3E2C;
+
+    font-size:25px;
+
+    font-weight:700;
+
+    margin:12px 0;
+
+    letter-spacing:1px;
+
+}
+
+.partyGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+
+    margin-top:50px;
+
+}
+
+.partyCard{
+
+    background:#1e1e1e;
+
+    border:1px solid rgba(201,162,39,.35);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+}
+
+.partyCard h3{
+
+    color:#C9A227;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+
+    margin-bottom:25px;
+
+}
+
+.partyCard p{
+
+    color:#fff;
+
+    margin:10px 0;
+
+    font-size:18px;
+
+}
+
+@media(max-width:900px){
+
+.partyGrid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/*=====================================
+        GALLERY
+=====================================*/
+
+#gallery{
+
+    background:#F8F5EF;
+
+    padding:120px 20px;
+
+}
+
+.galleryContainer{
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.galleryHeader{
+
+    text-align:center;
+
+    margin-bottom:80px;
+
+}
+
+.galleryHeader h4{
+
+    color:#C9A227;
+
+    letter-spacing:4px;
+
+}
+
+.galleryHeader h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:60px;
+
+    color:#2F3E2C;
+
+    margin:15px 0;
+
+}
+
+.galleryHeader p{
+
+    color:#555;
+
+}
+
+.galleryEdition{
+
+    margin-bottom:100px;
+
+}
+
+.galleryEdition small{
+
+    display:block;
+
+    color:#C9A227;
+
+    letter-spacing:3px;
+
+    margin-bottom:10px;
+
+}
+
+.galleryEdition h3{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:42px;
+
+    color:#2F3E2C;
+
+    margin-bottom:10px;
+
+}
+
+.editionText{
+
+    color:#666;
+
+    margin-bottom:35px;
+
+}
+
+.galleryGrid{
+
+    columns:4 280px;
+
+    column-gap:18px;
+
+}
+
+.galleryGrid img{
+
+    width:100%;
+
+    margin-bottom:18px;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    display:block;
+
+    transition:.35s;
+
+    break-inside:avoid;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.galleryGrid img:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 15px 45px rgba(201,162,39,.35);
+
+}
+
+@media(max-width:768px){
+
+.galleryGrid{
+
+    columns:2 160px;
+
+}
+
+.galleryHeader h2{
+
+    font-size:42px;
+
+}
+
+.galleryEdition h3{
+
+    font-size:32px;
+
+}
+
+}   
+
+/* =====================================================
+   FAQ & BONUS FEATURES
+===================================================== */
+
+.faq-bonus-section {
+    position: relative;
+    padding: 120px 7%;
+    background: #0d0d0d;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+/* GOLD BACKGROUND GLOW */
+
+.faq-bonus-section::before {
+    content: "";
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    top: 5%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(214,169,40,.10),
+        transparent 70%
+    );
+
+    pointer-events: none;
+}
+
+
+/* ================= HEADER ================= */
+
+.faq-header,
+.bonus-header {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+}
+
+
+.edition-label {
+    display: block;
+
+    color: #d6a928;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+
+.faq-header h2,
+.bonus-header h2 {
+    margin: 0;
+
+    color: #d6a928;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(40px, 5vw, 65px);
+
+    font-weight: 500;
+}
+
+
+.faq-header p,
+.bonus-header p {
+    margin-top: 18px;
+
+    color: #cfcfcf;
+
+    line-height: 1.7;
+}
+
+
+/* ================= FAQ ================= */
+
+.faq-container {
+
+    position: relative;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    z-index: 2;
+}
+
+
+.faq-item {
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 16px;
+
+    margin-bottom: 14px;
+
+    overflow: hidden;
+
+    background: rgba(255,255,255,.035);
+
+    transition: .3s ease;
+}
+
+
+.faq-item:hover {
+
+    border-color: rgba(214,169,40,.4);
+
+}
+
+
+.faq-question {
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 25px 30px;
+
+    cursor: pointer;
+
+    font-family: inherit;
+
+    font-size: 17px;
+
+    text-align: left;
+}
+
+
+.faq-question span:first-child {
+
+    color: #f2f2f2;
+
+}
+
+
+.faq-plus {
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid #d6a928;
+
+    border-radius: 50%;
+
+    color: #d6a928;
+
+    font-size: 22px;
+
+    transition: .3s ease;
+}
+
+
+.faq-answer {
+
+    max-height: 0;
+
+    overflow: hidden;
+
+    transition: max-height .4s ease;
+
+}
+
+
+.faq-answer p {
+
+    padding: 0 30px 25px;
+
+    margin: 0;
+
+    color: #bdbdbd;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* ACTIVE FAQ */
+
+.faq-item.active {
+
+    border-color: rgba(214,169,40,.5);
+
+}
+
+
+.faq-item.active .faq-plus {
+
+    transform: rotate(45deg);
+
+    background: #d6a928;
+
+    color: #111;
+}
+
+
+/* ================= BONUS HEADER ================= */
+
+.bonus-header {
+
+    margin-top: 140px;
+
+    margin-bottom: 55px;
+}
+
+
+/* ================= BONUS GRID ================= */
+
+.bonus-grid {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.bonus-card {
+
+    padding: 35px 25px;
+
+    min-height: 280px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(255,255,255,.12);
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,.06),
+        rgba(255,255,255,.025)
+    );
+
+    transition: .35s ease;
+}
+
+
+.bonus-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color: #d6a928;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.35),
+        0 0 25px rgba(214,169,40,.08);
+}
+
+
+.bonus-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 18px;
+}
+
+
+.bonus-card h3 {
+
+    margin: 0 0 12px;
+
+    color: #d6a928;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+
+.bonus-card p {
+
+    color: #bdbdbd;
+
+    line-height: 1.6;
+
+    font-size: 13px;
+
+    margin: 0 0 22px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.bonus-button {
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    border: 1px solid #d6a928;
+
+    border-radius: 30px;
+
+    color: #d6a928;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+
+    transition: .3s ease;
+}
+
+
+.bonus-button:hover {
+
+    background: #d6a928;
+
+    color: #111;
+}
+
+
+/* ================= FINAL CTA ================= */
+
+.faq-final {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin: 150px auto 20px;
+
+    padding: 70px 30px;
+
+    border-top: 1px solid rgba(214,169,40,.3);
+
+    border-bottom: 1px solid rgba(214,169,40,.3);
+}
+
+
+.faq-final-ring {
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+}
+
+
+.faq-final h2 {
+
+    margin: 0;
+
+    color: #d6a928;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(35px, 5vw, 55px);
+
+    font-weight: 500;
+}
+
+
+.faq-final p {
+
+    max-width: 600px;
+
+    margin: 20px auto 30px;
+
+    color: #c5c5c5;
+
+    line-height: 1.7;
+}
+
+
+.final-rsvp-button {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    border-radius: 30px;
+
+    background: #d6a928;
+
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s ease;
+}
+
+
+.final-rsvp-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 30px rgba(214,169,40,.25);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .bonus-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .faq-bonus-section {
+
+        padding: 90px 20px;
+
+    }
+
+    .faq-question {
+
+        padding: 20px;
+
+        font-size: 15px;
+
+    }
+
+    .faq-answer p {
+
+        padding: 0 20px 20px;
+
+    }
+
+    .bonus-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .bonus-card {
+
+        min-height: 230px;
+
+    }
+
+    .faq-final {
+
+        margin-top: 100px;
+
+        padding: 55px 20px;
+
+    }
+
+}
+
+/* ================================
+   MONETARY GIFTS / GIFT GUIDE
+================================ */
+
+.gift-guide-section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gift-guide-inner {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+.gift-guide-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gift-guide-label {
+    display: block;
+    color: #d9aa24;
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.gift-guide-icon {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.gift-guide-header h2 {
+    color: #d9aa24;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.gift-guide-header p {
+    color: #f2f2f2;
+    max-width: 750px;
+    margin: 8px auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* ================================
+   GIFT GUIDELINES
+================================ */
+
+.gift-guidelines {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto 55px;
+    padding: 30px;
+    border: 1px solid rgba(217, 170, 36, 0.35);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.035);
+    box-sizing: border-box;
+}
+
+.gift-guidelines h3 {
+    color: #d9aa24;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    margin: 0 0 15px;
+}
+
+.gift-guidelines p {
+    color: #eeeeee;
+    line-height: 1.8;
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+
+/* ================================
+   QR CODE CONTAINER
+================================ */
+
+.gift-qr-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+
+/* ================================
+   QR CARDS
+================================ */
+
+.gift-qr-card {
+    flex: 1;
+    max-width: 420px;
+    padding: 35px 25px;
+    background: rgba(25, 25, 25, 0.95);
+    border: 1px solid rgba(217, 170, 36, 0.35);
+    border-radius: 25px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.gift-qr-card:hover {
+    transform: translateY(-5px);
+    border-color: #d9aa24;
+    box-shadow: 0 15px 40px rgba(217, 170, 36, 0.12);
+}
+
+
+/* ================================
+   PAYMENT ICON
+================================ */
+
+.gift-payment-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   PAYMENT TITLE
+================================ */
+
+.gift-qr-card h3 {
+    color: #d9aa24;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+/* ================================
+   TEXT
+================================ */
+
+.gift-payment-label {
+    color: #eeeeee;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 10px 0;
+}
+
+.gift-scan-note {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 15px 0 0;
+}
+
+
+/* ================================
+   QR IMAGE
+================================ */
+
+.gift-qr-image-wrapper {
+    width: 280px;
+    height: 280px;
+    margin: 25px auto;
+    padding: 10px;
+    background: white;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.gift-qr-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ================================
+   THANK YOU
+================================ */
+
+.gift-thank-you {
+    margin-top: 60px;
+    color: #eeeeee;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.gift-heart {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.gift-thank-you p {
+    margin: 10px auto;
+}
+
+.gift-thank-you span {
+    color: #d9aa24;
+    display: block;
+    margin-top: 10px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .gift-guide-section {
+        padding: 70px 20px;
+    }
+
+    .gift-guide-header h2 {
+        font-size: 38px;
+    }
+
+    .gift-guide-header p {
+        font-size: 16px;
+    }
+
+    .gift-guidelines {
+        padding: 25px 20px;
+    }
+
+    .gift-qr-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .gift-qr-card {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .gift-qr-image-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* =========================================
+   GOOD TO KNOW / FEATURE CARDS
+========================================= */
+
+.good-to-know-section {
+    width: 100%;
+    padding: 90px 30px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   FOUR CARD GRID
+========================================= */
+
+.good-to-know-grid {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.good-to-know-card {
+    position: relative;
+
+    width: 100%;
+    min-height: 620px;
+
+    padding: 50px 30px 40px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: rgba(25, 25, 25, 0.95);
+
+    border: 1px solid rgba(217, 170, 36, 0.35);
+
+    border-radius: 24px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.good-to-know-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #d9aa24;
+
+    box-shadow:
+        0 15px 40px rgba(217, 170, 36, 0.12);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.good-to-know-card .card-icon {
+    width: 100%;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.good-to-know-card h3 {
+    width: 100%;
+
+    min-height: 76px;
+
+    margin: 0 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #d9aa24;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    line-height: 1.25;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.good-to-know-card p {
+    width: 100%;
+    max-width: 285px;
+
+    margin: 0 auto 30px;
+
+    color: #f2f2f2;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   CARD BUTTON
+========================================= */
+
+.good-to-know-card a {
+    margin-top: auto;
+
+    min-width: 180px;
+
+    min-height: 52px;
+
+    padding: 13px 25px;
+
+    box-sizing: border-box;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d9aa24;
+
+    border-radius: 30px;
+
+    background: transparent;
+
+    color: #d9aa24;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 15px;
+
+    font-weight: normal;
+
+    letter-spacing: 1px;
+
+    line-height: 1.3;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.good-to-know-card a:hover {
+    background: #d9aa24;
+
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   MOBILE / TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .good-to-know-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        max-width: 900px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .good-to-know-section {
+        padding: 70px 20px;
+    }
+
+    .good-to-know-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .good-to-know-card {
+        min-height: auto;
+
+        padding: 45px 25px 40px;
+    }
+
+    .good-to-know-card .card-icon {
+        font-size: 44px;
+
+        margin-bottom: 30px;
+    }
+
+    .good-to-know-card h3 {
+        min-height: auto;
+
+        font-size: 30px;
+
+        margin-bottom: 20px;
+    }
+
+    .good-to-know-card p {
+        max-width: 320px;
+
+        font-size: 16px;
+    }
+
+    .good-to-know-card a {
+        min-width: 190px;
+    }
+
+}
+
+/* ================================
+   WEDDING FOOTER
+================================ */
+
+.wedding-footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 70px 20px 35px;
+    text-align: center;
+    background: #0d0d0d;
+    color: #f2f2f2;
+}
+
+.footer-ring {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.wedding-footer h2 {
+    margin: 0 0 10px;
+    color: #d9aa24;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.footer-date {
+    margin: 0 0 25px;
+    color: #d9aa24;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.footer-message {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #eeeeee;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-divider {
+    width: 80px;
+    height: 1px;
+    background: #d9aa24;
+    margin: 30px auto;
+    opacity: 0.7;
+}
+
+.footer-love {
+    margin: 0 0 12px;
+    color: #d9aa24;
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+.footer-copyright {
+    margin: 0;
+    color: #888888;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .wedding-footer {
+        padding: 60px 20px 30px;
+    }
+
+    .footer-ring {
+        font-size: 32px;
+    }
+
+    .wedding-footer h2 {
+        font-size: 30px;
+    }
+
+    .footer-message {
+        font-size: 14px;
+    }
+
+}
+
+/* ================================
+   FINAL COUNTDOWN
+================================ */
+
+.final-countdown {
+    width: 100%;
+    min-height: 500px;
+    background: #0b0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 90px 20px;
+    box-sizing: border-box;
+}
+
+.final-countdown-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+.countdown-label {
+    color: #d9aa24;
+    font-size: 13px;
+    letter-spacing: 4px;
+    margin: 0 0 18px;
+    text-transform: uppercase;
+}
+
+.final-countdown h2 {
+    color: #f2f2f2;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 46px;
+    font-weight: normal;
+    margin: 0 0 15px;
+}
+
+.countdown-date {
+    color: #d9aa24;
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin: 0 0 50px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.countdown-box {
+    width: 150px;
+    min-height: 130px;
+    border: 1px solid rgba(217, 170, 36, 0.55);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.025);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.countdown-box span {
+    color: #d9aa24;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 42px;
+    line-height: 1;
+}
+
+.countdown-box small {
+    color: #eeeeee;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    text-transform: uppercase;
+}
+
+.countdown-message {
+    color: #cccccc;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 45px 0 0;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .final-countdown {
+        padding: 70px 20px;
+    }
+
+    .final-countdown h2 {
+        font-size: 36px;
+    }
+
+    .countdown-date {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+
+    .countdown-timer {
+        gap: 10px;
+    }
+
+    .countdown-box {
+        width: 130px;
+        min-height: 110px;
+    }
+
+    .countdown-box span {
+        font-size: 34px;
+    }
+
+    .countdown-box small {
+        font-size: 11px;
+    }
+
+    .countdown-message {
+        font-size: 16px;
+    }
+
+}
+
+/* =================================
+   SPECIAL CLOSING BUTTON
+================================= */
+
+.special-ending-trigger {
+    width: 100%;
+    text-align: center;
+    padding: 50px 20px 80px;
+    box-sizing: border-box;
+}
+
+.special-ending-button {
+    background: transparent;
+    color: #d9aa24;
+    border: 1px solid #d9aa24;
+    border-radius: 40px;
+    padding: 15px 35px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.special-ending-button:hover {
+    background: #d9aa24;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   FULL SCREEN CLOSING SCREEN
+================================= */
+
+.closing-screen {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background: #090909;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 1.2s ease,
+                visibility 1.2s ease;
+
+    overflow-y: auto;
+}
+
+
+/* SHOW CLOSING SCREEN */
+
+.closing-screen.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* =================================
+   CLOSING CONTENT
+================================= */
+
+.closing-content {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+
+    transition: opacity 1s ease,
+                transform 1s ease;
+}
+
+
+.closing-ring {
+    font-size: 55px;
+    margin-bottom: 25px;
+
+    animation: ringFloat 3s ease-in-out infinite;
+}
+
+
+.closing-content h1 {
+    color: #d9aa24;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(42px, 7vw, 82px);
+    font-weight: normal;
+
+    margin: 0 0 25px;
+}
+
+
+.closing-tagline {
+    color: #f5f5f5;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(20px, 3vw, 32px);
+
+    line-height: 1.6;
+
+    font-style: italic;
+
+    margin: 0 auto 30px;
+
+    max-width: 800px;
+}
+
+
+.closing-date {
+    color: #d9aa24;
+
+    font-size: clamp(17px, 2vw, 24px);
+
+    letter-spacing: 4px;
+
+    margin-top: 20px;
+}
+
+
+/* =================================
+   RING ANIMATION
+================================= */
+
+@keyframes ringFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =================================
+   PRENUP VIDEO
+================================= */
+
+.prenup-video-container {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 1.5s ease,
+                visibility 1.5s ease;
+}
+
+
+.prenup-video-container.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.prenup-video-container video {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    background: #000;
+}
+
+
+/* =================================
+   HIDE INTRO WHEN VIDEO STARTS
+================================= */
+
+.closing-screen.video-playing .closing-content {
+    opacity: 0;
+    transform: scale(1.05);
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 700px) {
+
+    .special-ending-trigger {
+        padding: 40px 20px 60px;
+    }
+
+    .special-ending-button {
+        font-size: 15px;
+        padding: 14px 28px;
+    }
+
+    .closing-content {
+        padding: 30px 20px;
+    }
+
+    .closing-ring {
+        font-size: 45px;
+    }
+
+    .closing-tagline {
+        font-size: 19px;
+    }
+
+    .closing-date {
+        font-size: 15px;
+        letter-spacing: 3px;
+    }
+
+}
+
+/* =================================
+   SPECIAL SOMETHING BUTTON
+================================= */
+
+.special-ending-trigger {
+    text-align: center;
+    margin: 60px auto;
+}
+
+.closing-button {
+    display: inline-block;
+    padding: 15px 35px;
+    border: 1px solid #d9aa24;
+    border-radius: 30px;
+    background: transparent;
+    color: #d9aa24;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.closing-button:hover {
+    background: #d9aa24;
+    color: #111;
+    transform: translateY(-3px);
+}
+
+
+/* =================================
+   PRENUP VIDEO
+================================= */
+
+.prenup-video-container {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.prenup-video-container.show {
+    display: block;
+    animation: prenupFadeIn 1s ease;
+}
+
+#prenupVideo {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid rgba(217, 170, 36, 0.5);
+    box-shadow: 0 20px 60px rgba(217, 170, 36, 0.15);
+    background: #000;
+}
+
+
+@keyframes prenupFadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
+/* =========================================
+   BACK BUTTON - PRENUP VIDEO
+========================================= */
+
+.back-from-prenup {
+    display: block;
+
+    margin: 25px auto 0;
+
+    padding: 12px 28px;
+
+    background: transparent;
+
+    border: 1px solid #d9aa24;
+    border-radius: 30px;
+
+    color: #d9aa24;
+
+    font-family: Georgia, serif;
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.back-from-prenup:hover {
+    background: #d9aa24;
+    color: #1c120d;
+}
+
+@media (max-width: 768px) {
+
+    .back-from-prenup {
+        margin-top: 18px;
+        padding: 11px 24px;
+        font-size: 15px;
+    }
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: block;
+    width: 75px;
+    height: auto;
+    max-height: 65px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+
+    .logo img {
+        width: 60px;
+        max-height: 50px;
+    }
+
+}
+
+/* =========================================
+   WELCOME CARD MONOGRAM
+========================================= */
+
+.welcomeCard .logo {
+    display: block;
+    width: 145px;
+    height: 145px;
+    object-fit: contain;
+
+    margin: 0 auto 30px auto;
+}
+

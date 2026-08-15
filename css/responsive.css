@@ -1,0 +1,53 @@
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .welcomeCard{
+
+        width:90%;
+
+        padding:35px;
+
+    }
+
+    .logo{
+
+        width:120px;
+
+    }
+
+    .welcomeCard h1{
+
+        font-size:48px;
+
+    }
+
+    .heroContent h1{
+
+        font-size:50px;
+
+    }
+
+    .heroContent h3{
+
+        letter-spacing:3px;
+
+        font-size:14px;
+
+    }
+
+    #countdown h2{
+
+        font-size:36px;
+
+    }
+
+    .timeBox{
+
+        width:140px;
+
+    }
+
+}
